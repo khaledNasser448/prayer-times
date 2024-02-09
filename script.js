@@ -89,7 +89,7 @@ async function getPrayerTimingsOfCity(cityName) {
     city: cityName,
   };
 
-  const url = new URL('http://api.aladhan.com/v1/timingsByCity/:date');
+  const url = new URL('https://api.aladhan.com/v1/timingsByCity/:date');
   url.searchParams.append('country', params.country);
   url.searchParams.append('city', params.city);
 
